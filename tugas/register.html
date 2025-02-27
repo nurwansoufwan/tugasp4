@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <!-- INLINE = SETIAP BARIS -->
+    <!-- INTERNAL = ADA DI HALAMAN/PAGE -->
+    <!-- EXTERNAL = DILUAR FILE-->
+     <!-- font -->
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+      .borderContent {
+        background-color: rgb(255, 253, 253);
+        width: 400px;
+        padding: 40px;
+        border-radius: 20px;
+        text-align: center;
+        background-color: rgb(243, 250, 250);
+        border-radius: 10px;
+        font-weight: bold;
+        padding: 6%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+      .formContent {
+        padding: 20px;
+      }
+      .inputForm {
+        width: 300px;
+        height: 20px;
+        border-radius: 10px;
+        padding-left: 4px;
+      }
+      body{
+        font-family: 'poppins';
+      }
+
+      .simpan {
+        background-color: rgb(50, 169, 50);
+        color: rgb(252, 252, 252);
+      }
+
+      .batal {
+        background-color: rgb(250, 2, 2);
+        color: rgb(246, 247, 248);
+      }
+    </style>
+  </head>
+  <body
+    style="
+      background-color: rgb(119, 227, 241);
+      display: flex;
+      justify-content: center;
+      padding: 150px;
+    "
+    
+  > 
+    <div class="borderContent">
+      <center><br>
+        <br> <br><br><br><br><br><br>
+        <img src="th.jpg" alt="" style=""><br>
+      
+      </center> 
+        
+      
+    </div>
+    <div class="borderContent">
+      <div class="titleForm">
+        <h1>WELCOME TO REGISTER PAGE</h1>
+        <div class="formContent">
+          <form action="succes.html">
+            <div style="margin-bottom: 10px;">
+              <label for="name"><b>Name:</b></label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="inputForm"
+                placeholder="Masukan Nama "
+              />
+            </div>
+            
+            <div style="margin-bottom: 10px;">
+              <label for="Password"> <b>Password : </b> </label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                class="inputForm"
+                placeholder="Masukan Password"
+              />
+            </div><div style="margin-bottom: 10px;">
+              <label for="Email"> <b>Email : </b> </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="inputForm"
+                placeholder="Masukan Email"
+              />
+            </div>
+            <div style="margin-bottom: 10px;">
+              <label for="jenisKelamin"><b>Jenis Kelamin : </b></label><br>
+              <input
+                type="radio"
+                id="lakilaki"
+                name="jenisKelamin"
+                value="lakilaki"
+              />Laki-laki
+              <input
+                type="radio"
+                id="perempuan"
+                name="jenisKelamin"
+                value="perempuan"
+              />Perempuan
+            </div>
+            <div style="margin-bottom: 10px;">
+              <label for="agama"><b>Agama : </b></label> <br>
+              <select name="agama" class="inputForm" id="agama">
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="hindu">Hindu</option>
+                <option value="budha">Budha</option>
+              </select>
+            </div>
+            <div style="margin-bottom: 10px;">
+              <label for="noHandphone"> <b>No Handphone : </b> </label>
+              <input
+                type="number"
+                id="noHandphone"
+                name="noHandphone"
+                class="inputForm"
+                value=""
+                placeholder="Masukan No Handphone"
+              />
+            </div>
+            
+          
+            <div style="margin-bottom: 10px;">
+              <button type="submit" class="simpan">SIMPAN</button>
+              <button type="reset" class="batal">BATAL</button>
+            </div>
+            <p>sudah mempunyai akun? <a href="index.html">Login now</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
